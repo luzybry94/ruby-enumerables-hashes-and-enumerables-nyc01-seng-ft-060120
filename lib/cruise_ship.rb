@@ -7,10 +7,7 @@
 # }
 
 def select_winner(passengers)
-  # add the code snippet here!
-passengers.each do |room, name|
-  if room == :suite_a && name[0] == "A"
-     return name
-  end
-end
+  passengers.each do |key, value|
+    if key == :suite_a && value.start_with? ("A")
+      
 end
